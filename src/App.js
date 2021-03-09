@@ -21,6 +21,9 @@ function App() {
        <Header></Header>
       <Router>
         <Switch>
+        <Route exact path="/">
+            <Shop></Shop>
+          </Route>
           <Route path="/shop">
           <Shop></Shop>
           </Route>
@@ -29,9 +32,6 @@ function App() {
           </Route>
           <Route  path="/inventory">
             <Inventory></Inventory>
-          </Route>
-          <Route exact path="/">
-            <Shop></Shop>
           </Route>
           <Route path="/product/:productKey">
             <ProductDetail></ProductDetail>
