@@ -36,7 +36,7 @@ const Review = () => {
         removeFromDatabaseCart(productKey);
     }
 
-    const thankYou= <img src={happyImage}></img>
+    const thankYou= <img src={happyImage} alt=""></img>
 
     return (
         <div className="twin-container">
