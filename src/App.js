@@ -1,13 +1,11 @@
 import React from 'react';
 import './App.css';
 import Header from './component/Header/Header';
-import Product from './component/Product/Product';
 import Shop from './component/Shop/Shop';
 import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
 } from "react-router-dom";
 import Review from './component/Review/Review';
 import Inventory from './component/Inventory/Inventory';
@@ -18,8 +16,9 @@ function App() {
 
   return (
     <div>
-       <Header></Header>
       <Router>
+       <Header></Header>
+      
         <Switch>
         <Route exact path="/">
             <Shop></Shop>
